@@ -1,0 +1,36 @@
+---
+R1:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.8
+R2:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.7
+R3:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.6
+switch1:
+    username: admin
+    password: admin
+    platform: cisco_iol
+    hostname: 172.20.20.5
+h1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.3
+h2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.4
+h3:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.2

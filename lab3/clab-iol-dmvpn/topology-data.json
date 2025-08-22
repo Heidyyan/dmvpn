@@ -1,0 +1,367 @@
+{
+  "name": "iol-dmvpn",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-689f12b6edd8",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "R1": {
+      "index": "0",
+      "shortname": "R1",
+      "longname": "clab-iol-dmvpn-R1",
+      "fqdn": "R1.iol-dmvpn.io",
+      "group": "",
+      "labdir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/R1",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.16.01A",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::8",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-689f12b6edd8",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/R1",
+        "clab-node-longname": "clab-iol-dmvpn-R1",
+        "clab-node-name": "R1",
+        "clab-node-type": "",
+        "clab-owner": "summeritss2",
+        "clab-topo-file": "/home/summeritss2/containerlab/lab3/setup.iol-dmvpn.clab.yml",
+        "containerlab": "iol-dmvpn",
+        "graph-geoCoordinateLat": "49.441536016972343",
+        "graph-geoCoordinateLng": "9.130228424356188",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-icon": "router",
+        "graph-posX": "-133",
+        "graph-posY": "21"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R2": {
+      "index": "1",
+      "shortname": "R2",
+      "longname": "clab-iol-dmvpn-R2",
+      "fqdn": "R2.iol-dmvpn.io",
+      "group": "",
+      "labdir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/R2",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.16.01A",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-689f12b6edd8",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/R2",
+        "clab-node-longname": "clab-iol-dmvpn-R2",
+        "clab-node-name": "R2",
+        "clab-node-type": "",
+        "clab-owner": "summeritss2",
+        "clab-topo-file": "/home/summeritss2/containerlab/lab3/setup.iol-dmvpn.clab.yml",
+        "containerlab": "iol-dmvpn",
+        "graph-geoCoordinateLat": "48.919632477622528",
+        "graph-geoCoordinateLng": "9.414691234377800",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-icon": "router",
+        "graph-posX": "35",
+        "graph-posY": "-7"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R3": {
+      "index": "2",
+      "shortname": "R3",
+      "longname": "clab-iol-dmvpn-R3",
+      "fqdn": "R3.iol-dmvpn.io",
+      "group": "",
+      "labdir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/R3",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:17.16.01A",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-689f12b6edd8",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/R3",
+        "clab-node-longname": "clab-iol-dmvpn-R3",
+        "clab-node-name": "R3",
+        "clab-node-type": "",
+        "clab-owner": "summeritss2",
+        "clab-topo-file": "/home/summeritss2/containerlab/lab3/setup.iol-dmvpn.clab.yml",
+        "containerlab": "iol-dmvpn",
+        "graph-geoCoordinateLat": "48.808920154411730",
+        "graph-geoCoordinateLng": "9.357321049979413",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-icon": "router",
+        "graph-posX": "35",
+        "graph-posY": "49"
+      },
+      "port-bindings": [
+      ]
+    },
+    "h1": {
+      "index": "3",
+      "shortname": "h1",
+      "longname": "clab-iol-dmvpn-h1",
+      "fqdn": "h1.iol-dmvpn.io",
+      "group": "",
+      "labdir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/h1",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-689f12b6edd8",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/h1",
+        "clab-node-longname": "clab-iol-dmvpn-h1",
+        "clab-node-name": "h1",
+        "clab-node-type": "",
+        "clab-owner": "summeritss2",
+        "clab-topo-file": "/home/summeritss2/containerlab/lab3/setup.iol-dmvpn.clab.yml",
+        "containerlab": "iol-dmvpn",
+        "graph-geoCoordinateLat": "48.773815754530304",
+        "graph-geoCoordinateLng": "9.606556161590662",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-icon": "router",
+        "graph-posX": "-217",
+        "graph-posY": "21"
+      },
+      "port-bindings": [
+      ]
+    },
+    "h2": {
+      "index": "4",
+      "shortname": "h2",
+      "longname": "clab-iol-dmvpn-h2",
+      "fqdn": "h2.iol-dmvpn.io",
+      "group": "",
+      "labdir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/h2",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-689f12b6edd8",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/h2",
+        "clab-node-longname": "clab-iol-dmvpn-h2",
+        "clab-node-name": "h2",
+        "clab-node-type": "",
+        "clab-owner": "summeritss2",
+        "clab-topo-file": "/home/summeritss2/containerlab/lab3/setup.iol-dmvpn.clab.yml",
+        "containerlab": "iol-dmvpn",
+        "graph-geoCoordinateLat": "49.142819677331175",
+        "graph-geoCoordinateLng": "9.382684239272622",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-icon": "router",
+        "graph-posX": "119",
+        "graph-posY": "-7"
+      },
+      "port-bindings": [
+      ]
+    },
+    "h3": {
+      "index": "5",
+      "shortname": "h3",
+      "longname": "clab-iol-dmvpn-h3",
+      "fqdn": "h3.iol-dmvpn.io",
+      "group": "",
+      "labdir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/h3",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-689f12b6edd8",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/h3",
+        "clab-node-longname": "clab-iol-dmvpn-h3",
+        "clab-node-name": "h3",
+        "clab-node-type": "",
+        "clab-owner": "summeritss2",
+        "clab-topo-file": "/home/summeritss2/containerlab/lab3/setup.iol-dmvpn.clab.yml",
+        "containerlab": "iol-dmvpn",
+        "graph-geoCoordinateLat": "49.273972629715118",
+        "graph-geoCoordinateLng": "9.081847846082296",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-icon": "router",
+        "graph-posX": "119",
+        "graph-posY": "49"
+      },
+      "port-bindings": [
+      ]
+    },
+    "switch1": {
+      "index": "6",
+      "shortname": "switch1",
+      "longname": "clab-iol-dmvpn-switch1",
+      "fqdn": "switch1.iol-dmvpn.io",
+      "group": "",
+      "labdir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/switch1",
+      "kind": "cisco_iol",
+      "image": "vrnetlab/cisco_iol:L2-17.15.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-689f12b6edd8",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/home/summeritss2/containerlab/lab3/clab-iol-dmvpn/switch1",
+        "clab-node-longname": "clab-iol-dmvpn-switch1",
+        "clab-node-name": "switch1",
+        "clab-node-type": "",
+        "clab-owner": "summeritss2",
+        "clab-topo-file": "/home/summeritss2/containerlab/lab3/setup.iol-dmvpn.clab.yml",
+        "containerlab": "iol-dmvpn",
+        "graph-geoCoordinateLat": "49.473447487794957",
+        "graph-geoCoordinateLng": "9.407182825612187",
+        "graph-groupLabelPos": "bottom-center",
+        "graph-icon": "router",
+        "graph-posX": "-49",
+        "graph-posY": "21"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "switch1",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:6f:b9:f6",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:88:55:7d",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "switch1",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:96:2a:5a",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:7c:f2:ee",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "switch1",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:29:18:70",
+        "peer": "z"
+      },
+      "z": {
+        "node": "R3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:bb:97:65",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "R1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:c8:a4:1c",
+        "peer": "z"
+      },
+      "z": {
+        "node": "h1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:1c:04:e1",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "R2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:84:b8:e6",
+        "peer": "z"
+      },
+      "z": {
+        "node": "h2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:20:f8:6b",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "R3",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:1b:24:83",
+        "peer": "z"
+      },
+      "z": {
+        "node": "h3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:08:b3:b7",
+        "peer": "a"
+      }
+    }
+  ]
+}

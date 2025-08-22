@@ -1,0 +1,80 @@
+name: iol-dmvpn
+topology:
+  nodes:
+    switch1:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:L2-17.15.01
+      labels:
+        graph-posX: "-49"
+        graph-posY: "21"
+        graph-geoCoordinateLat: "49.473447487794957"
+        graph-geoCoordinateLng: "9.407182825612187"
+        graph-icon: router
+        graph-groupLabelPos: bottom-center
+    R1:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01A
+      labels:
+        graph-posX: "-133"
+        graph-posY: "21"
+        graph-geoCoordinateLat: "49.441536016972343"
+        graph-geoCoordinateLng: "9.130228424356188"
+        graph-icon: router
+        graph-groupLabelPos: bottom-center
+    R2:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01A
+      labels:
+        graph-posX: "35"
+        graph-posY: "-7"
+        graph-geoCoordinateLat: "48.919632477622528"
+        graph-geoCoordinateLng: "9.414691234377800"
+        graph-icon: router
+        graph-groupLabelPos: bottom-center
+    R3:
+      kind: cisco_iol
+      image: vrnetlab/cisco_iol:17.16.01A
+      labels:
+        graph-posX: "35"
+        graph-posY: "49"
+        graph-geoCoordinateLat: "48.808920154411730"
+        graph-geoCoordinateLng: "9.357321049979413"
+        graph-icon: router
+        graph-groupLabelPos: bottom-center
+    h1:
+      kind: linux
+      image: alpine:latest
+      labels:
+        graph-posX: "-217"
+        graph-posY: "21"
+        graph-geoCoordinateLat: "48.773815754530304"
+        graph-geoCoordinateLng: "9.606556161590662"
+        graph-icon: router
+        graph-groupLabelPos: bottom-center
+    h2:
+      kind: linux
+      image: alpine:latest
+      labels:
+        graph-posX: "119"
+        graph-posY: "-7"
+        graph-geoCoordinateLat: "49.142819677331175"
+        graph-geoCoordinateLng: "9.382684239272622"
+        graph-icon: router
+        graph-groupLabelPos: bottom-center
+    h3:
+      kind: linux
+      image: alpine:latest
+      labels:
+        graph-posX: "119"
+        graph-posY: "49"
+        graph-geoCoordinateLat: "49.273972629715118"
+        graph-geoCoordinateLng: "9.081847846082296"
+        graph-icon: router
+        graph-groupLabelPos: bottom-center
+  links:
+    - endpoints: [ switch1:Ethernet1/0, R1:Ethernet0/1 ]
+    - endpoints: [ switch1:Ethernet1/1, R2:Ethernet0/1 ]
+    - endpoints: [ switch1:Ethernet1/2, R3:Ethernet0/1 ]
+    - endpoints: [ R1:Ethernet0/2, h1:eth1 ]
+    - endpoints: [ R2:Ethernet0/2, h2:eth1 ]
+    - endpoints: [ R3:Ethernet0/2, h3:eth1 ]
