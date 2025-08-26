@@ -17,7 +17,7 @@ This project is ideal for network engineers learning DMVPN or preparing for cert
 
 ## Getting Started
 ### Network Topology
-![Network Topology](images/network_topology.png)
+![Network Topology](images/dmvpn.png)
 *This diagram shows the lab setup with hosts (h1, h2, h3), routers (R1, R2, R3), and a switch (switch1) connected via Ethernet interfaces.*
 
 1. **Clone the Repository**:
